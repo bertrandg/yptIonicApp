@@ -1,0 +1,12 @@
+<ion-view title="Details de l'etin">
+	<ion-content>
+		<div class="row">
+			<div class="col">
+				<h1>{{ 'ETIN ID' + $stateParams.idEtin }}</h1>
+				<p>dsfgkvn dskgb dfhk jbgbjdf jgbfjb djgvhdfh gbvf dhgbf vfdi gvbiydfygb dfrirg vdfgvigb vfdyb vdfbdfv bydf vdfivy dfrbn vgdfd fvbdf bvidfg vidfbi dfg</p>
+				
+				<button ng-repeat="step in steps" ui-sref="app.player.step({idEtin: $stateParams.idEtin, idStep: step.id})" class="button button-block button-positive">{{ 'Chapitre ' + step.id + ': ' + step.title }}</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//www/templates/menu/menu.tpl.html=UTF-8
+encoding//www/templates/menu/menuHome.tpl.html=UTF-8
+encoding//www/templates/menu/menuList.tpl.html=UTF-8
+encoding//www/templates/menu/menuWorld.tpl.html=UTF-8
+encoding//www/templates/player/player.tpl.html=UTF-8
+encoding//www/templates/player/playerGallery.tpl.html=UTF-8
+encoding//www/templates/player/playerHome.tpl.html=UTF-8
+encoding//www/templates/player/playerOthers.tpl.html=UTF-8
+encoding//www/templates/player/playerStep.tpl.html=UTF-8
+encoding/<project>=UTF-8

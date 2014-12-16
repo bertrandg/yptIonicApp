@@ -1,0 +1,35 @@
+
+TODO:
+
+- mettre en place le worlflow, update gulpfile.js:
+	- concate, minify, uglify all js
+	- ngmin angular files before do that > https://github.com/Kagami/gulp-ng-annotate
+	- convert templates in js > https://github.com/miickel/gulp-angular-templatecache
+
+
+google maps + ionic > http://codepen.io/yafraorg/pen/jBEky
+
+image gallery + buffer + angular > https://github.com/revolunet/angular-carousel
+
+leaflet + ionic:
+ http://www.theodo.fr/blog/2014/09/avoiding-ionic-and-leafletjs-conflicts/
+ https://github.com/calendee/ionic-leafletjs-map-demo
+ http://tombatossals.github.io/angular-leaflet-directive/#!/
+ http://codepen.io/ggalmazor/pen/HAtwF
+
+create icon: https://www.npmjs.com/package/cordova-icon
+
+remember lasts viewed etins: http://learn.ionicframework.com/formulas/localstorage/
+
+use a init splash screen: http://learn.ionicframework.com/formulas/splash-screen/
+
+use ionic loader for API calls: http://learn.ionicframework.com/formulas/loading-screen-with-interceptors/
+
+dans ecran 'player', utiliser directive speciale pour menu visible qd grande résolutions
+
+quand gallery photos > hide status bar > http://learn.ionicframework.com/formulas/customizing-the-status-bar/
+
+attention ion-cache pour la gallery > https://github.com/driftyco/ionic/blob/master/CHANGELOG.md (beta 14) > cache-view="false"
+
+voir ce qu'on peut faire au niveau de shares réseaux sociaux...
+

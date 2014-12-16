@@ -1,0 +1,48 @@
+
+<ion-side-menus enable-menu-with-back-views="true">
+
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-energized nav-title-slide-ios7">
+		    <ion-nav-back-button class="button-clear">
+		        <i class="ion-arrow-left-c"></i> Back
+		    </ion-nav-back-button>
+		    <ion-nav-buttons side="left">
+		        <button menu-toggle="left" class="button icon ion-clipboard"> Sommaire</button>
+		    </ion-nav-buttons>
+		    <ion-nav-buttons side="right">
+		        <button class="button icon ion-star"></button>
+		    </ion-nav-buttons>
+		</ion-nav-bar>
+
+        <ion-nav-view name="playerContent"></ion-nav-view>
+    </ion-side-menu-content> 
+
+    <ion-side-menu side="left">
+<!--         <header class="bar bar-header bar-energized"> -->
+<!--             <h1 class="title">Hi guys!!!</h1> -->
+<!--         </header> -->
+        <ion-content>
+            <ion-list>
+                <ion-item ui-sref="app.menu.home" class="item-icon-left">
+                    <i class="icon ion-home"></i> Retour à l'accueil
+                </ion-item>
+                <div class="item item-divider"></div>
+                <ion-item ui-sref="app.player.home({idEtin: $stateParams.idEtin})" menu-close ng-class="{current: $state.is('app.player.home')}" class="item-icon-left">
+                    <i class="icon ion-plane"></i> Présentation de l'etin
+                </ion-item>
+                <ion-item ng-click="openEtinMap()" menu-close class="item-icon-left">
+                    <i class="icon ion-map"></i> Carte de l'etin
+                </ion-item>
+                <div class="item item-divider"></div>
+                <ion-item ng-repeat="step in steps" ui-sref="app.player.step({idEtin: $stateParams.idEtin, idStep: step.id})" menu-close ng-class="{current: $stateParams.idStep == step.id}" class="item-icon-left">
+					<i class="icon ion-bookmark"></i>{{ $index + ' > ' + step.title }}
+                </ion-item>
+                <div class="item item-divider"></div>
+                <ion-item ui-sref="app.player.others({idEtin: $stateParams.idEtin})" menu-close ng-class="{current: $state.is('app.player.others')}" class="item-icon-left">
+                    <i class="icon ion-paper-airplane"></i> Etins similaires
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+
+</ion-side-menus>
