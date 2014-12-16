@@ -9,13 +9,16 @@ TODO:
 
 google maps + ionic > http://codepen.io/yafraorg/pen/jBEky
 
-image gallery + buffer + angular > https://github.com/revolunet/angular-carousel
+image gallery + buffer + angular:
+ https://github.com/revolunet/angular-carousel
+ http://codepen.io/rdelafuente/pen/lteGc/
 
 leaflet + ionic:
  http://www.theodo.fr/blog/2014/09/avoiding-ionic-and-leafletjs-conflicts/
  https://github.com/calendee/ionic-leafletjs-map-demo
  http://tombatossals.github.io/angular-leaflet-directive/#!/
  http://codepen.io/ggalmazor/pen/HAtwF
+ 
 
 create icon: https://www.npmjs.com/package/cordova-icon
 
