@@ -10,13 +10,6 @@ yptIonic.controller('MenuCtrl', function($scope, $log) {
     $log.debug('MenuCtrl !!');
 });
 
-yptIonic.controller('MenuHomeCtrl', function($scope, $log) {
-    $log.debug('MenuHomeCtrl !!');
-});
-
-yptIonic.controller('MenuWorldCtrl', function($scope, $log) {
-    $log.debug('MenuWorldCtrl !!');
-});
 
 yptIonic.controller('MenuListCtrl', function($scope, $log, $timeout) {
     $log.debug('MenuListCtrl !!');
@@ -24,7 +17,7 @@ yptIonic.controller('MenuListCtrl', function($scope, $log, $timeout) {
     $scope.etins = [];
     $scope.noMoreEtinToLoad = false;
     
-    var etinPerPage = 12;
+    var etinPerPage = 6;
     
     var addEtin = function(id) {
         $scope.etins.push({id: id, title: 'Etin n°' + id});

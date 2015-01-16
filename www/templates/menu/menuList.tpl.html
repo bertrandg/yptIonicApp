@@ -1,15 +1,11 @@
 <ion-view title="{{ 'Liste e-tins ' + $stateParams.codeCountry }}">
-  <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="etin in etins"
-		        class="item item-icon-right"
-		        ui-sref="app.player.home({idEtin: etin.id})">
-        <span>{{ etin.title }}</span>
-      </ion-item>
-    </ion-list>
-	<ion-infinite-scroll ng-if="!noMoreEtinToLoad"
-						 on-infinite="loadMoreEtins()"
-						 distance="1%">
-	</ion-infinite-scroll>
+    <ion-content has-bouncing="true">
+        <ion-list>
+            <etin-card ng-repeat="etin in etins"></etin-card>
+        </ion-list>
+		<ion-infinite-scroll ng-if="!noMoreEtinToLoad"
+							 on-infinite="loadMoreEtins()"
+							 distance="1%">
+		</ion-infinite-scroll>
 	</ion-content>
 </ion-view>

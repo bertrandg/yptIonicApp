@@ -1,32 +1,25 @@
 <ion-view title="Accueil">
-  <ion-content>
+  <ion-content has-bouncing="true">
 	<div class="row">
 		<div class="col">
-		    <p>home menu page, here we are!!</p>
+		    <h1>home menu page, here we are!!</h1>
+		    <p>{{ '>>> info = ' + info }}</p>
+		    <p>{{ '>>> INFO2 = ' + info2 }}</p>
 		    <button ui-sref="app.menu.world" class="button button-block button-positive icon ion-earth"> Planisphère</button>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col">
-            <button class="button button-block button-positive">Derniers etins consultés</button>
+            <button class="button button-block" ng-class="{'button-positive': currentList == etins.lastViewed}" ng-click="currentList = etins.lastViewed">Derniers etins consultés</button>
 		</div>
 		<div class="col">
-            <button class="button button-block">Etins favoris</button>
+            <button class="button button-block" ng-class="{'button-positive': currentList == etins.favorites}" ng-click="currentList = etins.favorites">Etins favoris</button>
 		</div>
 	</div>
 	
-	<div class="row">
-		<div class="col"><img src="http://placehold.it/495x220"></div>
-		<div class="col">Caption Top</div>
-	</div>
-	<div class="row row-center">
-		<div class="col"><img src="http://placehold.it/495x220"></div>
-		<div class="col">Caption Middle</div>
-	</div>
-	<div class="row row-bottom">
-		<div class="col"><img src="http://placehold.it/495x220"></div>
-		<div class="col">Caption Middle</div>
-	</div>
+    <ion-list>
+        <etin-card ng-repeat="etin in currentList"></etin-card>
+    </ion-list>
 	
 	
   </ion-content>
