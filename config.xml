@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.yptionicapp454503" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>yptIonicApp</name>
+  <name>YourPhotoTravel</name>
   <description>
-        An Ionic Framework and Cordova project.
+        Discover the world through Your PhotoTravel. A social network where people share their trip with photos, tracks, feedbacks,..
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+  <author email="" href="http://bertrandg.github.io">
+      Bertrand GAILLARD
     </author>
   <content src="index.html"/>
   <access origin="*"/>
